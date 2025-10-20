@@ -1,0 +1,292 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html { letter-spacing: 1.4px; font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal;}
+.poppins-black {font-family: "Poppins", sans-serif; font-weight: 900; font-style: normal;}
+
+.container {width: 96%; margin: 0 auto; padding: 0;}
+.container:after,.container:before { content: " "; display: table;}
+.container:after { clear: both;}
+/* box da minha grid */
+.box-1 {width: 6.818181818181818%;}
+.box-2 {width: 15.15151515151515%;}
+.box-3 {width: 23.48484848484848%;}
+.box-4 {width: 31.81818181818182%;}
+.box-5 {width: 40.15151515151515%;}
+.box-6 {width: 48.48484848484848%;}
+.box-7 {width: 56.81818181818182%;}
+.box-8 { width: 65.15151515151515%;}
+.box-9 {width: 73.48484848484848%;}
+.box-10 {width: 81.81818181818182%;}
+.box-11 {width: 90.15151515151515%;}
+.box-12 {width: 98.48484848484848%;}
+.box-1,.box-2,.box-3,.box-4,.box-5,.box-6,.box-7,.box-8,.box-9,.box-10,.box-11,.box-12 {
+    float: left;    margin-left: 0.7575757575757576%;  margin-right: 0.7575757575757576%;
+}
+.cabecalho{
+    background-color: #e8e8e8;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+}
+
+nav{
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+}
+
+ul li{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+/* faxada */
+.big-title{
+    font-size: 46px;
+    text-align: center;
+}
+
+.faxada .big-title{
+    margin-top: 100px;
+}
+
+.faxada{
+    margin-top: 200px;
+}
+
+.faxada .text{
+    letter-spacing: 1.8px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.faxada .caixa {
+    background-color: #ff9535;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.faxada img{
+    width: 100%;
+    display: block;
+}
+
+.faxada .img{
+    padding: 30px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+/* produtos */
+
+.produtos{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #ff9535, #f7b06d);
+    margin-top: 150px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.produtos .big-title{
+    color: #e8e8e8;
+}
+
+.produtos .big-title::after{
+    content: "";
+    width: 50%;
+    height: 6px;
+    display: block;
+    background-color: #e8e8e8;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top:  10px;
+}
+
+.produtos .box-3 {
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition:  all .15s ease-in-out;
+}
+
+.produtos .box-3:hover{
+    transform: scale(1.1);
+}
+
+.produtos .box-3 img{
+    width: 100%;
+}
+
+/* sobre nós */
+
+.sobre{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background: linear-gradient(to right, #f0f0f0, #c4c3c3);
+    margin-top: 150px;
+    padding-top: 10px;
+}
+
+.sobre .big-title::after{
+    content: "";
+    width: 200px;
+    height: 6px;
+    display: block;
+    margin: 0 auto;
+    background-color: #000000;
+    margin-bottom: 50px;
+}
+.sobre .box-4{
+    background-color: #f7b06d;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sobre .box-8{
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}
+
+.sobre img{
+    width: 100%;
+}
+
+.sub-title{
+    font-size: 28px;
+    text-align: center;
+}
+
+.paragrafo {
+    letter-spacing: 1.4px;
+    text-align: justify;
+}
+
+/* contato */
+
+.contato{
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    margin-top: 130px;
+    background-color: #f7b06d;
+    padding-top: 40px;
+}
+
+.contato .big-title{
+    color: #e8e8e8;
+
+}
+
+.contato .big-title::after{
+    content: "";
+    width: 200px;
+    height: 6px;
+    display: block;
+    margin: 0 auto;
+    background-color: #e8e8e8;
+    margin-bottom: 50px;
+}
+
+.contato form{
+    width: 100%;
+    color: #ffffff;
+}
+
+.contato input,textarea{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 .1rem .5rem #be6938;
+}
+
+.contato textarea{
+  height: 150px;
+}
+
+.contato .btn{
+    background: linear-gradient(to left, #dcdcdc, #eeeeee);
+    color: #1c1c1c;
+}
+
+.btn:hover{
+    background: linear-gradient(to left, #eeeeee, #dcdcdc);
+    cursor: pointer;
+}
+
+.contato .sub-title{
+    font-size: 20px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.contato ul{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.contato ul li{
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.contato ul li i {
+    font-size: 38px;
+    margin-right: 10px;
+}
+
+.contato ul li .whatsapp:hover{
+    color: rgb(0, 181, 0);
+    cursor: pointer;
+}
+
+.contato ul li .email:hover{
+    color: rgb(255, 83, 74);
+    cursor: pointer;
+}
+
+.contato ul li .instagram:hover{
+    color: rgb(255, 74, 158);
+    cursor: pointer;
+}
+
+.contato ul li .local:hover{
+    color: rgb(41, 123, 255);
+    cursor: pointer;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+}
